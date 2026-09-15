@@ -143,19 +143,19 @@ flowchart LR
 
 ```mermaid
 flowchart TB
-    NS[NewsState]
-    NS --> A[raw_articles]
-    A --> B[normalized_articles]
-    B --> C[prefiltered_articles]
-    C --> D[ranked_articles]
-    D --> E[selected_articles]
-    E --> F[article_contents]
-    F --> G[summaries]
-    G --> H[validated_articles]
-    G --> I[failed_articles]
-    H --> J[newsletter]
-    I --> K[retry_count]
-    J --> L[publish_result]
+    NS[뉴스레터 상태<br/>NewsState]
+    NS --> A[수집한 원본 기사<br/>raw_articles]
+    A --> B[정규화·중복 제거 기사<br/>normalized_articles]
+    B --> C[키워드 예선 통과 기사<br/>prefiltered_articles]
+    C --> D[LLM 평가 완료 기사<br/>ranked_articles]
+    D --> E[최종 TOP 5 기사<br/>selected_articles]
+    E --> F[본문 수집 완료 기사<br/>article_contents]
+    F --> G[한국어 요약·인사이트<br/>summaries]
+    G --> H[최종 검수 통과 기사<br/>validated_articles]
+    G --> I[검수 실패 기사<br/>failed_articles]
+    H --> J[발송용 뉴스레터 HTML<br/>newsletter]
+    I --> K[자동 재작성 횟수<br/>retry_count]
+    J --> L[이메일 발행 결과<br/>publish_result]
 ```
 
 검수 단계의 FAIL이 전체 중단으로 이어지지 않도록 `재작성 → 재검수 → 그래도 실패하면 해당 기사만 SKIP`하는 Fail-safe를 적용했다.
