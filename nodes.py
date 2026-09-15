@@ -56,6 +56,14 @@ FINAL_SOURCES = [{'name': 'Google Cloud Blog', 'url': 'https://cloudblog.withgoo
 
 INTEREST_KEYWORDS = ['agent', 'agentic', 'langgraph', 'mcp', 'model context protocol', 'automation', 'workflow', 'rag', 'local llm', 'document ai', 'tool use', 'multi-agent']
 
+REQUIRED_FIELDS = [
+    "korean_title",
+    "what_happened",
+    "why_important",
+    "for_workers",
+    "try_today",
+]
+
 
 
 def clean_html(text):
