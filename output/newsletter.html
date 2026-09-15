@@ -1,0 +1,593 @@
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <body style="
+        margin:0;
+        padding:30px 10px;
+        background:#f4f5f7;
+        font-family:Arial, 'Noto Sans KR', sans-serif;
+        color:#222222;
+    ">
+
+        <div style="
+            max-width:720px;
+            margin:0 auto;
+            background:#ffffff;
+            padding:40px;
+            border-radius:18px;
+        ">
+
+            <div style="
+                font-size:30px;
+                font-weight:bold;
+                margin-bottom:8px;
+            ">
+                🤖 MY AI WORK RADAR
+            </div>
+
+            <div style="
+                color:#777777;
+                margin-bottom:30px;
+            ">
+                2026.09.15
+            </div>
+
+            <div style="
+                background:#111111;
+                color:#ffffff;
+                padding:18px 20px;
+                border-radius:12px;
+                margin-bottom:30px;
+                font-size:20px;
+                font-weight:bold;
+            ">
+                🔥 오늘 꼭 볼 AI 소식 5
+            </div>
+
+            
+        <div style="
+            background-color:#FFF9D9;
+            margin-bottom:28px;
+            padding:30px;
+            border-radius:16px;
+            border:1px solid rgba(0,0,0,0.05);
+        ">
+
+            <div style="
+                display:inline-block;
+                background:#ffffff;
+                padding:5px 10px;
+                border-radius:20px;
+                font-size:13px;
+                font-weight:bold;
+                color:#555555;
+                margin-bottom:12px;
+            ">
+                NEWS 01
+            </div>
+
+            <h2 style="
+                font-size:22px;
+                line-height:1.45;
+                margin:0 0 12px 0;
+                color:#111111;
+            ">
+                신뢰 가능한 에이전트형 워크로드를 위한 BigQuery Graph의 measures 지원
+            </h2>
+
+            <div style="
+                font-size:14px;
+                color:#666666;
+                margin-bottom:24px;
+            ">
+                ⭐⭐⭐⭐⭐
+                &nbsp;
+                <strong>17/18</strong>
+                &nbsp; | &nbsp;
+                Google Cloud Blog
+            </div>
+
+            <div style="
+                background:rgba(255,255,255,0.55);
+                padding:18px;
+                border-radius:12px;
+                margin-bottom:14px;
+            ">
+                <h3 style="margin-top:0;">
+                    📰 요약
+                </h3>
+
+                <p style="
+                    line-height:1.75;
+                    margin-bottom:0;
+                ">
+                    Google Cloud는 BigQuery Graph가 preview로 measures(관리되는 메트릭)를 지원한다고 발표했다. 이 기능은 기존 테이블을 제자리에서(property graph로) 매핑해 zero ETL로 관계 매핑과 메트릭을 통합하고, GRAPH_EXPAND와 AGG 등 표준 SQL을 통해 그래프 경로를 해석한 후 정확한 집계를 수행할 수 있게 한다. 또한 BigQuery Studio에 비주얼 그래프 모델러, Conversational Analytics 통합, Looker(및 LookML) 네이티브 통합과 DevOps 워크플로 지원을 제공한다고 밝혔다.
+                </p>
+            </div>
+
+            <h3>
+                💡 중요성
+            </h3>
+
+            <p style="line-height:1.75;">
+                에이전트형 워크로드는 평면 테이블만으로 다중 홉(멀티-홉) 관계를 추적하기 어려워 잘못된 운영 결정을 내릴 위험이 있다. BigQuery Graph의 measures 통합은 관계 맵과 검증된 메트릭을 데이터 레이어에서 결합해 에이전트가 '무엇(what)'과 '왜(why)'를 구분해 추론할 수 있도록 돕고, SQL 조인으로 인한 중복 행 문제를 해결해 보다 신뢰할 수 있는 KPI 집계를 가능하게 한다.
+            </p>
+
+            <h3>
+                🏢 시사점
+            </h3>
+
+            <p style="line-height:1.75;">
+                비개발자 관점에서는 드래그앤드롭 비주얼 그래프 모델러와 Conversational Analytics로 복잡한 테이블 조인 대신 관계 기반 질문을 하거나 그래프를 시각적으로 구성해 인사이트를 얻기 쉬워진다. 또한 Looker 연동으로 핵심 지표를 데이터 계층에 정의하면 보고·분석의 일관성이 높아지고, 에이전트가 근거 있는 '왜' 설명을 제공해 불필요한 프로모션 제안 등 실무상의 실수를 줄이는 데 도움이 될 수 있다.
+            </p>
+
+            <h3>
+                🛠 실천안:)
+            </h3>
+
+            <p style="line-height:1.75;">
+                오늘 시도해볼 것: 자신의 BigQuery 프로젝트에서 작은 고객·주문 테이블을 선택해 PROPERTY GRAPH를 생성하고(프리뷰 기능 필요), Order에 MEASURE(SUM 또는 AVG) 하나를 정의한 뒤 GRAPH_EXPAND 쿼리로 사용자별 집계 결과를 비교해보라. 이 실험을 통해 그래프 기반 집계가 평면 테이블 쿼리와 어떻게 다른지 직접 확인할 수 있다.
+            </p>
+
+            <div style="
+                margin-top:22px;
+            ">
+
+                <a href="https://cloud.google.com/blog/products/data-analytics/bigquery-graphs-with-measures-for-trusted-agentic-workloads/"
+                   style="
+                       display:inline-block;
+                       background:#ffffff;
+                       color:#2563eb;
+                       text-decoration:none;
+                       font-weight:bold;
+                       padding:10px 16px;
+                       border-radius:8px;
+                   ">
+                   🔗 원문 보기
+                </a>
+
+            </div>
+
+        </div>
+        
+        <div style="
+            background-color:#EAF8E8;
+            margin-bottom:28px;
+            padding:30px;
+            border-radius:16px;
+            border:1px solid rgba(0,0,0,0.05);
+        ">
+
+            <div style="
+                display:inline-block;
+                background:#ffffff;
+                padding:5px 10px;
+                border-radius:20px;
+                font-size:13px;
+                font-weight:bold;
+                color:#555555;
+                margin-bottom:12px;
+            ">
+                NEWS 02
+            </div>
+
+            <h2 style="
+                font-size:22px;
+                line-height:1.45;
+                margin:0 0 12px 0;
+                color:#111111;
+            ">
+                Abnormal AI: Amazon Bedrock AgentCore를 활용한 에이전트 기반 이메일 보안의 대규모 적용
+            </h2>
+
+            <div style="
+                font-size:14px;
+                color:#666666;
+                margin-bottom:24px;
+            ">
+                ⭐⭐⭐⭐⭐
+                &nbsp;
+                <strong>17/18</strong>
+                &nbsp; | &nbsp;
+                AWS Machine Learning Blog
+            </div>
+
+            <div style="
+                background:rgba(255,255,255,0.55);
+                padding:18px;
+                border-radius:12px;
+                margin-bottom:14px;
+            ">
+                <h3 style="margin-top:0;">
+                    📰 요약
+                </h3>
+
+                <p style="
+                    line-height:1.75;
+                    margin-bottom:0;
+                ">
+                    Abnormal AI는 Amazon Bedrock AgentCore의 Code Interpreter 기능을 배포해 실시간 인라인 이메일 위협 탐지 에이전트에서 사용하고 있으며, 이 시스템은 현재 생산 환경에서 수십억 건의 메시지를 처리하고 동일한 규모로 에이전트 구동 코드를 실행한다. 이 회사는 이메일 탐지에 대해 계층화된 세 단계 아키텍처를 운영하는데(Tier 1: 수십억 건/일, Tier 2: 수백만 건/일, Tier 3: 수만 건/일) 이들의 코드 변경 중 80%는 에이전트를 일부 활용해 빌드되고 40%는 배경 에이전트가 끝까지 작성한다고 보고했다.
+                </p>
+            </div>
+
+            <h3>
+                💡 중요성
+            </h3>
+
+            <p style="line-height:1.75;">
+                이 사례는 대형 언어 모델만으로는 해결하기 어려운 계산, 데이터 집계, 검증 작업에 대해 에이전트가 '코드 실행용 스크래치패드'를 필요로 한다는 점을 보여준다. 또한 Amazon Bedrock AgentCore Code Interpreter 같은 관리형 서버리스 샌드박스는 대규모 운영에서 재현성·네트워크 격리(데이터 유출 방지) 같은 보안·운영 요건을 충족시키며 에이전트 기반 자동화를 실무에 적용할 수 있게 한다는 점에서 중요하다.
+            </p>
+
+            <h3>
+                🏢 시사점
+            </h3>
+
+            <p style="line-height:1.75;">
+                비개발자 관점에서는 복잡하거나 불확실한 이메일 사례를 사람이 일일이 검사하지 않아도 에이전트가 샌드박스에서 분석·검증해 선별해줄 가능성이 생겼다는 의미다. 다만 민감 데이터 취급이 수반되므로 데이터 인입 정책과 샌드박스 설정(네트워크 차단 등)을 명확히 하고, 에이전트가 제안한 결과를 검증하는 절차를 유지해야 한다.
+            </p>
+
+            <h3>
+                🛠 실천안:)
+            </h3>
+
+            <p style="line-height:1.75;">
+                실행 제안: 접근 가능한 코드 실행형 LLM(예: ChatGPT의 코드 실행/Advanced Data Analysis 기능)을 이용하거나 Google Colab에서 간단한 파이썬 스크립트를 만들어 최근 50~100건의 이메일(제목과 발신자, 요약)을 업로드하고, 키워드 기반 의심 카운트(예: '비밀번호', '긴급', '결제' 등)와 간단한 시각화(막대그래프)로 의심 이메일을 자동 분류해보라. 출력된 CSV와 차트를 바탕으로 하루에 처리할 자동화 규칙 1개(예: 즉시 차단 대상, 보안팀 검토 대상)를 정의해 소규모로 적용해보는 것을 권한다.
+            </p>
+
+            <div style="
+                margin-top:22px;
+            ">
+
+                <a href="https://aws.amazon.com/blogs/machine-learning/abnormal-ai-amazon-bedrock-agentcore-for-agentic-email-security-at-scale/"
+                   style="
+                       display:inline-block;
+                       background:#ffffff;
+                       color:#2563eb;
+                       text-decoration:none;
+                       font-weight:bold;
+                       padding:10px 16px;
+                       border-radius:8px;
+                   ">
+                   🔗 원문 보기
+                </a>
+
+            </div>
+
+        </div>
+        
+        <div style="
+            background-color:#EAF4FF;
+            margin-bottom:28px;
+            padding:30px;
+            border-radius:16px;
+            border:1px solid rgba(0,0,0,0.05);
+        ">
+
+            <div style="
+                display:inline-block;
+                background:#ffffff;
+                padding:5px 10px;
+                border-radius:20px;
+                font-size:13px;
+                font-weight:bold;
+                color:#555555;
+                margin-bottom:12px;
+            ">
+                NEWS 03
+            </div>
+
+            <h2 style="
+                font-size:22px;
+                line-height:1.45;
+                margin:0 0 12px 0;
+                color:#111111;
+            ">
+                Ninth Wave가 Amazon Bedrock로 구축한 AI 기반 오픈 파이낸스 온보딩 'Compass'
+            </h2>
+
+            <div style="
+                font-size:14px;
+                color:#666666;
+                margin-bottom:24px;
+            ">
+                ⭐⭐⭐⭐⭐
+                &nbsp;
+                <strong>17/18</strong>
+                &nbsp; | &nbsp;
+                AWS Machine Learning Blog
+            </div>
+
+            <div style="
+                background:rgba(255,255,255,0.55);
+                padding:18px;
+                border-radius:12px;
+                margin-bottom:14px;
+            ">
+                <h3 style="margin-top:0;">
+                    📰 요약
+                </h3>
+
+                <p style="
+                    line-height:1.75;
+                    margin-bottom:0;
+                ">
+                    Ninth Wave는 Amazon Bedrock AgentCore와 Strands Agents를 활용해 Compass라는 AI 기반 온보딩 어시스턴트를 구축했다. Compass는 은행별 API 문서를 테넌트 단위로 그라운딩하고, 다중 전문 에이전트(검색, 문서 Q&A, 문서 분류, 필드 매핑, 분석, 인터랙티브 워크플로우, 준비도 분석)를 통해 API 검증·필드 매핑·준비도 점수 산출을 자동화한다. 베타 클라이언트 온보드가 2026년 3월 1일에 시작되었고, 프로덕션 준비는 2026년 5월 15일, 일반 가용성은 2026년 6월 1일에 이루어졌다.
+                </p>
+            </div>
+
+            <h3>
+                💡 중요성
+            </h3>
+
+            <p style="line-height:1.75;">
+                이 사례는 도메인별 규제 환경에서 다중 에이전트 아키텍처와 테넌트-스코프 그라운딩을 결합해 정확성과 보안·준수 요구사항을 동시에 만족시킨 실제 구현이라는 점에서 의미가 있다. 또한 Amazon Bedrock AgentCore의 관리형 멀티에이전트 런타임과 모델 선택을 통해 인프라 운영 부담을 줄이고 업무 로직에 집중할 수 있음을 보여준다.
+            </p>
+
+            <h3>
+                🏢 시사점
+            </h3>
+
+            <p style="line-height:1.75;">
+                비개발자 관점에서는 온보딩 과정에서 여러 팀(은행 엔지니어, 어그리게이터, Ninth Wave 온보딩팀)이 동일 포털에서 협업하고, API 검증과 필드 매핑 같은 반복 작업이 자동화되면 응답 시간 단축과 일관된 정보 유지에 도움이 된다. 특히 전통적으로 '수주(weeks)'가 걸리던 검증·매핑 작업이 자동화되면 엔지니어링 자원을 더 높은 가치 업무에 배분할 수 있다.
+            </p>
+
+            <h3>
+                🛠 실천안:)
+            </h3>
+
+            <p style="line-height:1.75;">
+                실행 제안: 오늘 조직의 한 파트너 온보딩 사례를 골라(예: 하나의 은행 API) 필요한 필드 목록과 현재 매핑 상태를 스프레드시트로 정리하고, 필드 커버리지를 기준으로 간단한 '준비도' 점수를 계산해 보세요(예: 매핑된 필드 수 ÷ 필수 필드 수). 이 작업으로 현재 온보딩 병목과 우선순위를 시각화할 수 있습니다.
+            </p>
+
+            <div style="
+                margin-top:22px;
+            ">
+
+                <a href="https://aws.amazon.com/blogs/machine-learning/how-ninth-wave-built-ai-powered-open-finance-onboarding-on-amazon-bedrock/"
+                   style="
+                       display:inline-block;
+                       background:#ffffff;
+                       color:#2563eb;
+                       text-decoration:none;
+                       font-weight:bold;
+                       padding:10px 16px;
+                       border-radius:8px;
+                   ">
+                   🔗 원문 보기
+                </a>
+
+            </div>
+
+        </div>
+        
+        <div style="
+            background-color:#F3ECFF;
+            margin-bottom:28px;
+            padding:30px;
+            border-radius:16px;
+            border:1px solid rgba(0,0,0,0.05);
+        ">
+
+            <div style="
+                display:inline-block;
+                background:#ffffff;
+                padding:5px 10px;
+                border-radius:20px;
+                font-size:13px;
+                font-weight:bold;
+                color:#555555;
+                margin-bottom:12px;
+            ">
+                NEWS 04
+            </div>
+
+            <h2 style="
+                font-size:22px;
+                line-height:1.45;
+                margin:0 0 12px 0;
+                color:#111111;
+            ">
+                오픈소스 취약점 탐지·수정 도구 Mantis 시작하기
+            </h2>
+
+            <div style="
+                font-size:14px;
+                color:#666666;
+                margin-bottom:24px;
+            ">
+                ⭐⭐⭐⭐
+                &nbsp;
+                <strong>16/18</strong>
+                &nbsp; | &nbsp;
+                Google Cloud Blog
+            </div>
+
+            <div style="
+                background:rgba(255,255,255,0.55);
+                padding:18px;
+                border-radius:12px;
+                margin-bottom:14px;
+            ">
+                <h3 style="margin-top:0;">
+                    📰 요약
+                </h3>
+
+                <p style="
+                    line-height:1.75;
+                    margin-bottom:0;
+                ">
+                    Mantis는 Google이 공개한 오픈소스 프레임워크로, 소프트웨어 취약점의 발견·분류·재현·패치를 자동화하도록 설계되었으며 GitHub에서 이용할 수 있다. 이 도구는 critic 및 review 같은 에이전트 기법과 샌드박스 재현을 결합해 AI 코드 스캐닝에서 자주 발생하는 허위경보와 진짜양성률 7% 미만 문제를 보완하려고 한다. 또한 리포지토리 이력을 분석해 아키텍처·위협모델 문서를 자동 생성하고 파일들을 디렉터리·루트 수준 요약으로 압축하는 계층적 보안 요약트리를 통해 토큰 오버헤드를 85% 이상 줄였다고 밝혔다.
+                </p>
+            </div>
+
+            <h3>
+                💡 중요성
+            </h3>
+
+            <p style="line-height:1.75;">
+                이 발표는 AI 에이전트를 이용해 단순 탐지에서 벗어나 취약점의 재현과 패치까지 기계 속도로 처리하려는 방향을 보여준다. 특히 샌드박스 기반 재현과 검토 에이전트를 통해 허위양성 문제를 완화하려는 접근은 AI 기반 보안 자동화의 신뢰성을 높이는 데 중요한 진전이다.
+            </p>
+
+            <h3>
+                🏢 시사점
+            </h3>
+
+            <p style="line-height:1.75;">
+                비개발자 실무자에게는 Mantis가 코드 리뷰·취약점 우선순위화와 패치 제안 과정을 자동화해 보안 대응 속도를 높일 수 있다는 의미다. 다만 초기에는 샌드박스와 취약점 수용 기준, 사람이 정리한 컨텍스트를 마련해야 효과가 크므로 보안 담당자와 개발자 간 협업이 필요하다.
+            </p>
+
+            <h3>
+                🛠 실천안:)
+            </h3>
+
+            <p style="line-height:1.75;">
+                제안: https://github.com/google/mantis.git 를 클론한 뒤, 팀의 작은 테스트 코드 저장소를 대상으로 기사에 나온 예시 프롬프트("I would like to use Mantis framework in path/to/mantis to review my code in path/to/your/code, can you help me get started?")를 코딩 에이전트에 입력해 샌드박스 옵션으로 스캔을 시도해보라. (실험 제안으로, 실제 운영 코드 적용 전에는 격리된 환경에서만 실행할 것.)
+            </p>
+
+            <div style="
+                margin-top:22px;
+            ">
+
+                <a href="https://cloud.google.com/blog/products/identity-security/getting-started-with-the-mantis-harness-to-find-and-fix-bugs/"
+                   style="
+                       display:inline-block;
+                       background:#ffffff;
+                       color:#2563eb;
+                       text-decoration:none;
+                       font-weight:bold;
+                       padding:10px 16px;
+                       border-radius:8px;
+                   ">
+                   🔗 원문 보기
+                </a>
+
+            </div>
+
+        </div>
+        
+        <div style="
+            background-color:#FFF0E3;
+            margin-bottom:28px;
+            padding:30px;
+            border-radius:16px;
+            border:1px solid rgba(0,0,0,0.05);
+        ">
+
+            <div style="
+                display:inline-block;
+                background:#ffffff;
+                padding:5px 10px;
+                border-radius:20px;
+                font-size:13px;
+                font-weight:bold;
+                color:#555555;
+                margin-bottom:12px;
+            ">
+                NEWS 05
+            </div>
+
+            <h2 style="
+                font-size:22px;
+                line-height:1.45;
+                margin:0 0 12px 0;
+                color:#111111;
+            ">
+                구글, 법무 전용 'Gemini Enterprise for Legal' 공개
+            </h2>
+
+            <div style="
+                font-size:14px;
+                color:#666666;
+                margin-bottom:24px;
+            ">
+                ⭐⭐⭐⭐
+                &nbsp;
+                <strong>16/18</strong>
+                &nbsp; | &nbsp;
+                Google Cloud Blog
+            </div>
+
+            <div style="
+                background:rgba(255,255,255,0.55);
+                padding:18px;
+                border-radius:12px;
+                margin-bottom:14px;
+            ">
+                <h3 style="margin-top:0;">
+                    📰 요약
+                </h3>
+
+                <p style="
+                    line-height:1.75;
+                    margin-bottom:0;
+                ">
+                    Google Cloud가 Gemini Enterprise for Legal을 발표했다. 이 솔루션은 법무 업무에 맞춘 목적별 스킬(purpose-built skills), 문서관리·사례 저장소 등 신뢰된 시스템과의 MCP 커넥터, 데이터를 기반으로 업무를 수행하는 에이전트, 그리고 파트너 생태계와 결합된 통합 환경을 제공하며, 모든 것을 관통하는 거버넌스 제어판을 포함한다.
+                </p>
+            </div>
+
+            <h3>
+                💡 중요성
+            </h3>
+
+            <p style="line-height:1.75;">
+                이 발표는 AI를 단순 조회 도구가 아니라 실제로 작업을 수행하는 에이전트 수준으로 전환하려는 움직임을 보여준다. 특히 법무처럼 권한·기밀 유지가 중요한 분야에서 기존 권한 모델을 유지하면서 문서관리·계약검토·DSAR 처리·규제감시 등 정밀한 워크플로우 자동화를 추진할 수 있다는 점에서 AI 적용 범위와 신뢰성을 높일 수 있다.
+            </p>
+
+            <h3>
+                🏢 시사점
+            </h3>
+
+            <p style="line-height:1.75;">
+                비개발자 실무자 입장에서는 계약 검토·적시 규제 모니터링·DSAR 대응 같은 반복적이고 규정 준수가 중요한 업무의 부담을 줄일 잠재력이 있다. 또한 Google Workspace, Microsoft 365, iManage, NetDocuments, Docusign 등 기존에 쓰던 시스템과의 연동을 전제로 설계돼 현행 워크플로우를 크게 바꾸지 않고도 도입 가능하지만, 실제로는 내부 플레이북 정리와 IT·리스크 팀의 거버넌스 설정이 필요하다.
+            </p>
+
+            <h3>
+                🛠 실천안:)
+            </h3>
+
+            <p style="line-height:1.75;">
+                실행 제안: 오늘 당장 자주 다루는 표준 계약(예: NDA) 한 건을 골라 '한 페이지 계약 플레이북'을 작성해보라(핵심 조항, 허용범위, 거부항목 등). 그런 다음 현재 사용하는 AI 챗봇(예: ChatGPT, Bard 등)에 샘플 계약을 붙여넣고 플레이북과의 차이점(위험 조항, 누락 조항 등)을 찾아 달라고 요청해 보라. 이를 통해 플레이북 기반 검토가 실제로 어떤 식으로 업무 효율을 높일지 감을 잡을 수 있다.
+            </p>
+
+            <div style="
+                margin-top:22px;
+            ">
+
+                <a href="https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-for-legal/"
+                   style="
+                       display:inline-block;
+                       background:#ffffff;
+                       color:#2563eb;
+                       text-decoration:none;
+                       font-weight:bold;
+                       padding:10px 16px;
+                       border-radius:8px;
+                   ">
+                   🔗 원문 보기
+                </a>
+
+            </div>
+
+        </div>
+        
+
+            <div style="
+                margin-top:35px;
+                padding-top:20px;
+                border-top:1px solid #eeeeee;
+                color:#999999;
+                font-size:12px;
+                text-align:center;
+                line-height:1.7;
+            ">
+                🤖 My AI Work Radar<br>
+                AI Agent · 업무자동화 맞춤형 뉴스레터
+            </div>
+
+        </div>
+
+    </body>
+    </html>
+    

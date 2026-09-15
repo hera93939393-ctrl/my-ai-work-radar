@@ -1,0 +1,32 @@
+name: Daily My AI Work Radar
+
+on:
+  schedule:
+    - cron: '0 8 * * *'
+      timezone: 'Asia/Seoul'
+
+  # 필요할 때 GitHub에서 수동 실행도 가능
+  workflow_dispatch:
+
+jobs:
+  send-newsletter:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 저장소 코드 가져오기
+        uses: actions/checkout@v4
+
+      - name: Python 설정
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 라이브러리 설치
+        run: pip install -r requirements.txt
+
+      - name: My AI Work Radar 실행
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
+          EMAIL_APP_PASSWORD: ${{ secrets.EMAIL_APP_PASSWORD }}
+        run: python run.py
